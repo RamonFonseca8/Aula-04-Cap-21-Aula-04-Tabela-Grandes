@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,29 +7,42 @@
 </head>
     <style>
         body {
-            font-family: 'Times New Roman', Times, serif;
+            font-family: Arial, Helvetica, sans-serif;
         }
         table {
-            width: 500px;
+            /* width: 500px; */
             border-collapse: collapse ;
             position: relative;
         }
+
+       .tam1{
+        width: 500px;
+       }
+       .tam2{
+        width: 300px;
+       }
+       .tam3{
+        width: 800px;
+       }
         td, th {
             border: 1px solid black;
             padding: 10px;
         }
         thead, tfoot {
-            background-color: gray;
-            color: white;
+            background-color: rgb(176, 169, 169);
+            color: rgb(0, 0, 0);
         }
 
         thead > tr > th {
             position: sticky; 
             top: 0; 
-            background-color: gray;
+            background-color: rgb(255, 255, 255);
 
         }
         td.num {
+            text-align: right;
+        }
+        td.esq {
             text-align: right;
         }
         caption {
@@ -39,10 +52,10 @@
             background-color: lightgray;
 
         }
-        tbody > tr:nth-child(2n) {
+       /* tbody > tr:nth-child(2n) {
             background-color: gray;
 
-        }
+        }*/
     </style>
 <body>
     <table>
@@ -51,41 +64,41 @@
         </caption>
         <thead>
             <tr>
-                <th scope="col">Estado</th>
-                <th scope="col" style="width: 100px">População</th>
-                <th scope="col">Comando HTML Utillizado</th>
+                <th scope="col" class="tam1">Estado</th>
+                <th scope="col" class="tam2">População</th>
+                <th scope="col" class="tam3">Comando HTML Utillizado</th>
             </tr>
 
         </thead>
         <tbody>
             <tr>
-            <td>Acre</td>    
-            <td class="num">830.018</td>
-            <td>'Negrito' e 'Destacado'</td>
+            <td><b>Acre</b></td>    
+            <td class="num"><mark>830.018</mark></td>
+            <td>'<b>Negrito</b>' e '<mark>Destacado</mark>'</td>
             </tr>
 
             <tr>
-            <td>Alagoas</td>    
+            <td><i>Alagoas</i></td>    
             <td class="num">3.365.351</td>
-            <td>'Itálico'</td>
+            <td>'<i>Itálico</i>'</td>
             </tr>
 
             <tr>
-            <td>Amapá</td>    
+            <td><u>Amapá</u></td>    
             <td class="num">877.613</td>
-            <td>'Texto sublinhado'</td>
+            <td>'<u>Texto sublinhado</u>'</td>
             </tr>
 
             <tr>
-            <td>Amazonas</td>    
-            <td class="num">4.269.995</td>
-            <td>'Texto riscado' e 'Texto sublinhado'</td>
+            <td><del>Amazonas</del></td>    
+            <td class="num"><b>4.269.995</b></td>
+            <td>'<del>Texto riscado</del>' e '<u>Texto sublinhado</u>'</td>
             </tr>
 
             <tr>
-            <td>Bahia</td>    
+            <td><sup>Bahia</sup></td>    
             <td class="num">14.141.626</td>
-            <td>'Texto sobrescrito'</td>
+            <td>'<sup>Texto sobrescrito</sup>'</td>
             </tr>
 
             <tr>
@@ -95,77 +108,83 @@
             </tr>
 
             <tr>
-            <td>Distrito Federal</td>    
+            <td><b>Distrito Federal</b></td>    
             <td class="num">3.098.883</td>
-            <td>'Texto em Negrito'</td>
+            <td>'<b>Texto em Negrito</b>'</td>
             </tr>
 
             <tr>
             <td>Espírito Santo</td>    
             <td class="num">4.108.508</td>
-            <td>'Negrito' e 'Destacado'</td>
+            <td>'"Citação curta"'</td>
             </tr>
 
             <tr>
-            <td>Acre</td>    
-            <td class="num">830,018</td>
-            <td>'Negrito' e 'Destacado'</td>
+            <td>Goiás</td>    
+            <td class="num">7.206.508</td>
+            <td>'Citação de fonte'</td>
             </tr>
 
             <tr>
-            <td>Acre</td>    
-            <td class="num">830,018</td>
-            <td>'Negrito' e 'Destacado'</td>
+            <td>Maranhão</td>    
+            <td class="num">6.775.805</td>
+            <td>'Texto monoespaçado'</td>
             </tr>
 
             <tr>
-            <td>Acre</td>    
-            <td class="num">830,018</td>
-            <td>'Negrito' e 'Destacado'</td>
+            <td>Mato Grosso</td>    
+            <td class="num">3.658.813</td>
+            <td>'Texto pré-formatado'</td>
             </tr>
 
             <tr>
-            <td>Acre</td>    
-            <td class="num">830,018</td>
-            <td>'Negrito' e 'Destacado'</td>
+            <td>Paraíba</td>    
+            <td class="num">4.059.905</td>
+            <td>'Texto pequeno'</td>
             </tr>
 
             <tr>
-            <td>Acre</td>    
-            <td class="num">830,018</td>
-            <td>'Negrito' e 'Destacado'</td>
+            <td>Piauí</td>    
+            <td class="num">3.281.480</td>
+            <td>'Texto subscrito'</td>
             </tr>
 
             <tr>
-            <td>Acre</td>    
-            <td class="num">830,018</td>
-            <td>'Negrito' e 'Destacado'</td>
+            <td>Rio de Janeiro</td>    
+            <td class="num">16.054.524</td>
+            <td>'Citação em Bloco'</td>
             </tr>
 
             <tr>
-            <td>Acre</td>    
-            <td class="num">830,018</td>
-            <td>'Negrito' e 'Destacado'</td>
+            <td><b>Rio Grande do Sul</b></td>    
+            <td class="num">10.882.956</td>
+            <td>'<b>Negrito</b>'</td>
             </tr>
 
             <tr>
-            <td>Acre</td>    
-            <td class="num">830,018</td>
-            <td>'Negrito' e 'Destacado'</td>
+            <td><i>Rondônia</i></td>    
+            <td class="num">1.616.379</td>
+            <td>'<i>Itálico</i>'</td>
             </tr>
 
             <tr>
-            <td>Acre</td>    
-            <td class="num">830,018</td>
-            <td>'Negrito' e 'Destacado'</td>
+            <td><mark>Roraima</mark></td>    
+            <td class="num">636.707</td>
+            <td><mark>'Texto destacado'</mark></td>
             </tr>
 
             <tr>
-            <td>Acre</td>    
-            <td class="num">830,018</td>
-            <td>'Negrito' e 'Destacado'</td>
+            <td>Tocantins</td>    
+            <td class="num">1.607.363</td>
+            <td>'Abreviação'</td>
             </tr>
         </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total da população estimada</th>
+                <td class="num"><strong>Soma total</strong></td>
+                <td>Realizar a soma das colunas</td> 
+        </tfoot>
     </table>
 </body>
 </html>
